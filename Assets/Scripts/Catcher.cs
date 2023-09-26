@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // Sam Robichaud 
 // NSCC Truro 2022
@@ -22,6 +23,7 @@ public class Catcher : MonoBehaviour
     {
         //Debug.Log(other.name);
         _gameManager.ResetBallPos();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 
